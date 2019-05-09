@@ -4,4 +4,10 @@
     <select id="getBookList" resultType="Book">
         SELECT * FROM book;
     </select>
+    <insert id="submitBook" parameterType="String">
+        INSERT into submitbookrecord VALUES(#{0}, #{1}, #{2}, #{3}, #{4});
+    </insert>
+    <select id="getBookInfoById" parameterType="int">
+        SELECT * FROM book WHERE id = #{0};
+    </select>
 </mapper>

@@ -10,6 +10,9 @@ public class SubmitBookRecord {
     private Date submitTime;
     private int userId;
 
+    public static final int forSelling = 0;
+    public static final int forRenting = 1;
+
     public int getId() {
         return id;
     }
