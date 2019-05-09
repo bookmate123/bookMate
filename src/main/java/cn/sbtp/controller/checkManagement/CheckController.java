@@ -1,4 +1,4 @@
-package cn.sbtp.controller.checkController;
+package cn.sbtp.controller.checkManagement;
 
 
 

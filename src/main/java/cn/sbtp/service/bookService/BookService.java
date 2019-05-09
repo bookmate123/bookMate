@@ -22,4 +22,10 @@ public class BookService {
     public Book getBookInfoById(int id){
         return bookMapper.getBookInfoById(id);
     }
+    public void deleteBook(int id){
+        bookMapper.deleteBook(id);
+    }
+    public void updateBook(int id, int type, double price, Date submitTime){
+        bookMapper.updateBook(id, type, price, submitTime);
+    }
 }
