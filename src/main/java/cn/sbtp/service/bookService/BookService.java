@@ -28,4 +28,5 @@ public class BookService {
     public void updateBook(int id, int type, double price, Date submitTime){
         bookMapper.updateBook(id, type, price, submitTime);
     }
+
 }

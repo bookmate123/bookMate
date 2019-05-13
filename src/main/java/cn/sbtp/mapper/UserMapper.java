@@ -15,8 +15,8 @@ public interface UserMapper {
     //用户注册
     void register();
 
-    //查看用户信息
+    //获取用户信息
     User getUserInfo(int id);
-    //
-
+    //插入用户的头像名称
+    void insertIconName(int id, String iconName);
 }

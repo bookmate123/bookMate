@@ -17,5 +17,10 @@ public class UserService {
     public List<User> getUsers(){
         return userMapper.getUsers();
     }
-
+    public void insertIconName(int id, String iconName){
+        userMapper.insertIconName(id, iconName);
+    }
+    public User getUserInfo(int id){
+        return userMapper.getUserInfo(id);
+    }
 }

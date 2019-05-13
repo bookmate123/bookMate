@@ -4,4 +4,7 @@
     <select id="getUsers" resultType="User">
         SELECT * from user;
     </select>
+    <select id="getUserInfo" resultType="User">
+        SELECT * FROM user where id = #{0};
+    </select>
 </mapper>

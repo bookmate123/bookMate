@@ -4,4 +4,16 @@
     <select id="getBookList" resultType="Book">
         SELECT * FROM book;
     </select>
+    <insert id="submitBook" parameterType="String">
+        INSERT into submitbookrecord VALUES(#{0}, #{1}, #{2}, #{3}, #{4});
+    </insert>
+    <select id="getBookInfoById" parameterType="int">
+        SELECT * FROM book WHERE id = #{0};
+    </select>
+    <delete id="deleteBook" parameterType="int">
+        DELETE FROM book WHERE id = #{0};
+    </delete>
+    <update id="updateBook">
+        UPDATE book SET type = #{1}, price = #{2}, submitTime = #{3} WHERE id = #{0};
+    </update>
 </mapper>

@@ -12,6 +12,7 @@ public class User {
     private String password;
     private Date registerTime;
     private String QQ;
+    private String iconName;
 
     public String getName() {
         return name;
@@ -75,5 +76,13 @@ public class User {
 
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public String getIconName() {
+        return iconName;
+    }
+
+    public void setIconName(String iconName) {
+        this.iconName = iconName;
     }
 }
