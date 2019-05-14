@@ -1,6 +1,7 @@
 package cn.sbtp.controller.bookMangement;
 
 import cn.sbtp.model.Impression;
+import cn.sbtp.service.bookService.BookService;
 import cn.sbtp.service.bookService.ImpressionService;
 import com.wordnik.swagger.annotations.ApiOperation;
 import org.omg.CORBA.MARSHAL;
@@ -22,6 +23,8 @@ public class ImpressionController {
 
     @Autowired
     private ImpressionService impressionService;
+    @Autowired
+    private BookService bookService;
 
     @ApiOperation("给书籍添加感想")
     @RequestMapping(value = "addImpression", method = RequestMethod.POST)
@@ -40,6 +43,7 @@ public class ImpressionController {
 
     @ApiOperation("获取书籍感想列表")
     @RequestMapping(value = "getImpressionList", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
     public Map getImpressionList(@RequestParam("bookId") int id){
         Map map = new HashMap();
         List<Impression> impressionList = impressionService.getImpressionList(id);
@@ -48,5 +52,15 @@ public class ImpressionController {
         return map;
     }
 
+    @ApiOperation("获取感想对应的书籍名称")
+    @RequestMapping(value = "getBookNameByImpressionId", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
+    public Map getBookNameByImpressionId(@RequestParam("impressionId") int id){
+        Map map = new HashMap();
+        String bookName = bookService.getBookNameByImpressionId(id);
+        map.put("status", 1);
+        map.put("bookName", bookName);
+        return map;
+    }
 
 }

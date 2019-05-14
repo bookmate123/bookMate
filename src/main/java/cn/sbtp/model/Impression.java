@@ -8,7 +8,8 @@ public class Impression {
     private String content;
     private int bookId;
     private int userId;
-    private Date submitTime;
+    private Date releaseTime;
+    private String title;
 
     public int getId() {
         return id;
@@ -42,11 +43,19 @@ public class Impression {
         this.userId = userId;
     }
 
-    public Date getSubmitTime() {
-        return submitTime;
+    public Date getReleaseTime() {
+        return releaseTime;
     }
 
-    public void setSubmitTime(Date submitTime) {
-        this.submitTime = submitTime;
+    public void setReleaseTime(Date releaseTime) {
+        this.releaseTime = releaseTime;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

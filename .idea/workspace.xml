@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9baea5b8-10bd-4930-a889-05ac312b638a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/BookMapper.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/BookMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/model/Impression.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/model/Impression.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/BookService.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/BookService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/bookMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/bookMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,53 +19,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="116" column="33" lean-forward="false" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+            <state relative-caret-position="-1378">
+              <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
               <folding>
-                <element signature="e#4113#4114#0" expanded="true" />
-                <element signature="e#4156#4157#0" expanded="true" />
+                <element signature="e#4778#4779#0" expanded="true" />
+                <element signature="e#4821#4822#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoyoteAdapter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.0.23/tomcat-embed-core-8.0.23.jar!/org/apache/catalina/connector/CoyoteAdapter.class">
+      <file leaf-file-name="BookMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/BookMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="461" column="0" lean-forward="false" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubmitController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/TransManagement/SubmitController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/bookImages/default.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="145" column="104" lean-forward="true" selection-start-line="145" selection-start-column="104" selection-end-line="145" selection-end-column="104" />
+            <state relative-caret-position="484">
+              <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -69,25 +45,19 @@
       <file leaf-file-name="bookMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/bookMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+            <state relative-caret-position="528">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
-                <marker date="1557818398165" expanded="true" signature="250:268" ph="SELECT * FRO... book" />
-                <marker date="1557818398165" expanded="true" signature="321:427" ph="INSERT into submitbookrecord... " />
-                <marker date="1557818398165" expanded="true" signature="523:557" ph="SELECT * FRO... book" />
-                <marker date="1557818398165" expanded="true" signature="630:662" ph="DELETE FROM " />
-                <marker date="1557818398165" expanded="true" signature="715:791" ph="UPDATE book " />
+                <marker date="1557833579891" expanded="true" signature="250:268" ph="SELECT * FRO... book" />
+                <marker date="1557833579891" expanded="true" signature="321:427" ph="INSERT into submitbookrecord... " />
+                <marker date="1557833579891" expanded="true" signature="523:557" ph="SELECT * FRO... book" />
+                <marker date="1557833579891" expanded="true" signature="630:662" ph="DELETE FROM " />
+                <marker date="1557833579891" expanded="true" signature="715:791" ph="UPDATE book " />
+                <marker date="1557833579891" expanded="true" signature="871:958" ph="SELECT * FRO... book" />
+                <marker date="1557833579891" expanded="true" signature="903:957" ph="SELECT follo... follow" />
+                <marker date="1557833579891" expanded="true" signature="1046:1130" ph="SELECT bookN... book" />
+                <marker date="1557833579891" expanded="true" signature="1084:1129" ph="SELECT bookI... impression" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/checkManagement/CheckController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -95,9 +65,57 @@
       <file leaf-file-name="ImpressionController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="880">
+              <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+              <folding>
+                <element signature="e#1021#1051#0" expanded="true" />
+                <element signature="e#1782#1812#0" expanded="true" />
+                <element signature="e#2226#2256#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="impressionMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/impressionMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+              <folding>
+                <marker date="1557812334296" expanded="true" signature="240:344" ph="INSERT into impression... " />
+                <marker date="1557812334296" expanded="true" signature="448:488" ph="SELECT * FRO... impression" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImpressionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/ImpressionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Impression.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/model/Impression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+              <folding>
+                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#963#964#0" expanded="true" />
+                <element signature="e#991#992#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
+                <element signature="e#1067#1068#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,21 +123,34 @@
       <file leaf-file-name="SubmitBookInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/model/SubmitBookInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-149">
+            <state relative-caret-position="-256">
               <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubmitBookRecord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/model/SubmitBookRecord.java">
+      <file leaf-file-name="BookService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/BookService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="506">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="5" />
               <folding>
-                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1037#1038#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImpressionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/ImpressionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,8 +161,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -152,16 +183,13 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/ReviewMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/checkController/CheckController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/model/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/model/Impression.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/model/Follow.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/model/SubmitBookRecord.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/userController/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/BookMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookController/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/images/qeqew.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/BookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/UserMapper.xml" />
@@ -172,14 +200,18 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/ImpressionMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/ImpressionService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/impressionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/model/SubmitBookInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/TransMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/service/transService/TransService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/transMapper/transMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/bookMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/TransManagement/SubmitController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/FollowMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/BookMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/BookService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/bookMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/model/Impression.java" />
       </list>
     </option>
   </component>
@@ -189,7 +221,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -314,16 +346,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sbtp" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bookMate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sbtp" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="checkMapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-mybatis" type="b2602c69:ProjectViewProjectNode" />
@@ -601,15 +623,15 @@
       <workItem from="1557398593666" duration="6825000" />
       <workItem from="1557469387379" duration="1405000" />
       <workItem from="1557719173756" duration="8926000" />
-      <workItem from="1557743930207" duration="15634000" />
+      <workItem from="1557743930207" duration="21723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62695000" />
+    <option name="totallyTimeSpent" value="68784000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -651,34 +673,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/SwaggerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/images/bookImages/default.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/userManagement/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.2.5.RELEASE/spring-boot-autoconfigure-1.2.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -732,39 +731,7 @@
         <state relative-caret-position="330">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/ImpressionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/ImpressionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#619#620#0" expanded="false" />
-            <element signature="e#680#681#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/impressionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding>
-            <marker date="1557812334296" expanded="true" signature="240:344" ph="INSERT into impression... " />
-            <marker date="1557812334296" expanded="true" signature="448:488" ph="SELECT * FRO... impression" />
           </folding>
         </state>
       </provider>
@@ -785,14 +752,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/model/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/model/Review.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -804,20 +763,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/BookMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/TransMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -837,18 +788,8 @@
         <state relative-caret-position="352">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#691#692#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#458#459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,47 +988,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/bookMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
-          <folding>
-            <marker date="1557818398165" expanded="true" signature="250:268" ph="SELECT * FRO... book" />
-            <marker date="1557818398165" expanded="true" signature="321:427" ph="INSERT into submitbookrecord... " />
-            <marker date="1557818398165" expanded="true" signature="523:557" ph="SELECT * FRO... book" />
-            <marker date="1557818398165" expanded="true" signature="630:662" ph="DELETE FROM " />
-            <marker date="1557818398165" expanded="true" signature="715:791" ph="UPDATE book " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/model/SubmitBookInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/bookImages/default.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/checkManagement/CheckController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="492">
           <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/TransManagement/SubmitController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
+        <state relative-caret-position="514">
           <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1095,18 +1011,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/bookImages/default.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/userManagement/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/FollowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/model/SubmitBookInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-256">
+          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/bookMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1557833579891" expanded="true" signature="250:268" ph="SELECT * FRO... book" />
+            <marker date="1557833579891" expanded="true" signature="321:427" ph="INSERT into submitbookrecord... " />
+            <marker date="1557833579891" expanded="true" signature="523:557" ph="SELECT * FRO... book" />
+            <marker date="1557833579891" expanded="true" signature="630:662" ph="DELETE FROM " />
+            <marker date="1557833579891" expanded="true" signature="715:791" ph="UPDATE book " />
+            <marker date="1557833579891" expanded="true" signature="871:958" ph="SELECT * FRO... book" />
+            <marker date="1557833579891" expanded="true" signature="903:957" ph="SELECT follo... follow" />
+            <marker date="1557833579891" expanded="true" signature="1046:1130" ph="SELECT bookN... book" />
+            <marker date="1557833579891" expanded="true" signature="1084:1129" ph="SELECT bookI... impression" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/ImpressionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/ImpressionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/BookMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/model/Impression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+          <folding>
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="116" column="33" lean-forward="false" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+        <state relative-caret-position="-1378">
+          <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
           <folding>
-            <element signature="e#4113#4114#0" expanded="true" />
-            <element signature="e#4156#4157#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+            <element signature="e#4821#4822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <element signature="e#1021#1051#0" expanded="true" />
+            <element signature="e#1782#1812#0" expanded="true" />
+            <element signature="e#2226#2256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/impressionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding>
+            <marker date="1557812334296" expanded="true" signature="240:344" ph="INSERT into impression... " />
+            <marker date="1557812334296" expanded="true" signature="448:488" ph="SELECT * FRO... impression" />
           </folding>
         </state>
       </provider>

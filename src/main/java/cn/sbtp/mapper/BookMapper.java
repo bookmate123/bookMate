@@ -20,5 +20,8 @@ public interface BookMapper {
     void deleteBook(int id);
     //用户更新上传的图书
     void updateBook(int id, int type, double price, Date submitTime);
-
+    //获取自己所关注人的所发布的书籍列表
+    List<Book> getFollowedBookList(int followingId);
+    //获取感想对应的书籍名称
+    String getBookNameByImpressionId(int impressionId);
 }

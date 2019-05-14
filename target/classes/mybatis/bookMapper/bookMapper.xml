@@ -16,4 +16,10 @@
     <update id="updateBook">
         UPDATE book SET type = #{1}, price = #{2}, submitTime = #{3} WHERE id = #{0};
     </update>
+    <select id="getFollowedBookList" resultType="book">
+        SELECT * FROM book where id in (SELECT followedId FROM follow WHERE followingId = #{0});
+    </select>
+    <select id="getBookNameByImpressionId" resultType="String">
+        SELECT bookName from book where id = (SELECT bookId FROM impression where id = #{0});
+    </select>
 </mapper>

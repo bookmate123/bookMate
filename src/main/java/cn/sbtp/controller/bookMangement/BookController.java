@@ -23,9 +23,23 @@ public class BookController {
     @ApiOperation("随机推荐图书")
     @RequestMapping(value = "getRandomBooks", method = RequestMethod.POST)
     @SuppressWarnings("unchecked")
-    public Map getRandomBooks(){
+    public Map getRandomBooks(@RequestParam("userId") int id){
         Map map = new HashMap();
+        //自己所关注的人的书籍列表
+        List<Book> followedBookList = bookService.getFollowedBookList(id);
+        //最后返回的随机推荐书籍列表
+        List<Book> resultBookList = new ArrayList<>(followedBookList);
+        if(followedBookList.size() > 20){
+            resultBookList.add(followedBookList.get((int)(Math.random() * followedBookList.size())));
+        }
+        else {
+            for(int i = 0; i < 20 - followedBookList.size(); i++){
+                Book book = bookService.getBookInfoById((int)(Math.random() * 200 + 1));
+                resultBookList.add(book);
+            }
+        }
         map.put("status", 1);
+        map.put("resultBookList", resultBookList);
         return map;
     }
 

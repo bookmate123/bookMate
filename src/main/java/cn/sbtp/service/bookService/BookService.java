@@ -28,5 +28,10 @@ public class BookService {
     public void updateBook(int id, int type, double price, Date submitTime){
         bookMapper.updateBook(id, type, price, submitTime);
     }
-
+    public List<Book> getFollowedBookList(int followingId){
+        return bookMapper.getFollowedBookList(followingId);
+    }
+    public String getBookNameByImpressionId(int impressionId){
+        return bookMapper.getBookNameByImpressionId(impressionId);
+    }
 }
