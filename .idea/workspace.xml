@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9baea5b8-10bd-4930-a889-05ac312b638a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/bookImages/default.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/images/icons/default.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/icons/default.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/sbtp/controller/bookMangement/BookController.class" afterPath="$PROJECT_DIR$/target/classes/cn/sbtp/controller/bookMangement/BookController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/ImpressionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/ImpressionMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/TransMapper.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/TransMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/ImpressionService.java" afterPath="$PROJECT_DIR$/src/main/java/cn/sbtp/service/bookService/ImpressionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/impressionMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/bookMapper/impressionMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1334">
-              <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+            <state relative-caret-position="624">
+              <caret line="116" column="8" lean-forward="false" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#813#843#0" expanded="true" />
@@ -69,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubmitController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SubmitController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/TransManagement/SubmitController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="638">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#658#688#0" expanded="true" />
@@ -201,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/userManagement/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/config/ResourcesConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/mapper/ImpressionMapper.java" />
@@ -212,6 +189,7 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/service/transService/TransService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/transMapper/transMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/TransManagement/SubmitController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java" />
       </list>
     </option>
   </component>
@@ -623,12 +601,12 @@
       <workItem from="1557398593666" duration="6825000" />
       <workItem from="1557469387379" duration="1405000" />
       <workItem from="1557719173756" duration="8926000" />
-      <workItem from="1557743930207" duration="9184000" />
+      <workItem from="1557743930207" duration="9857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56245000" />
+    <option name="totallyTimeSpent" value="56918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1072,17 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1334">
-          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#813#843#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/ImpressionController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -1095,14 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/checkManagement/CheckController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1153,11 +1112,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/TransManagement/SubmitController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        <state relative-caret-position="638">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#658#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/checkManagement/CheckController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/sbtp/controller/bookMangement/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="116" column="8" lean-forward="false" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#813#843#0" expanded="true" />
           </folding>
         </state>
       </provider>
