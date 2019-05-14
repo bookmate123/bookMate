@@ -4,7 +4,4 @@
     <insert id="addImpression">
         INSERT into impression(content, releaseTime, rate, userId, bookId) VALUES (#{0}, #{1}, #{2}, #{3}, #{4});
     </insert>
-    <select id="getImpressionList" resultType="Impression" parameterType="int">
-        SELECT * FROM impression where id = #{0};
-    </select>
 </mapper>

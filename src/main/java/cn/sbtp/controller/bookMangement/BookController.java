@@ -20,6 +20,15 @@ public class BookController {
     @Autowired
     private BookService bookService;
 
+    @ApiOperation("随机推荐图书")
+    @RequestMapping(value = "getRandomBooks", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
+    public Map getRandomBooks(){
+        Map map = new HashMap();
+        map.put("status", 1);
+        return map;
+    }
+
     @ApiOperation("获取图书列表")
     @RequestMapping(value = "getBookList", method = RequestMethod.POST)
     @SuppressWarnings("unchecked")
