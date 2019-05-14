@@ -12,4 +12,6 @@ public interface ImpressionMapper {
     void addImpression(String content, Date releaseTime, double rate, int userId, int bookId);
     //获取书籍感想列表
     List<Impression> getImpressionList(int id);
+    //获取发表感想的用户姓名
+    String getUserNameByImpressionId(int impressionId);
  }

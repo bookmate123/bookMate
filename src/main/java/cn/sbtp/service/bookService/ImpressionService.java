@@ -19,4 +19,7 @@ public class ImpressionService {
     public List<Impression> getImpressionList(int id){
         return impressionMapper.getImpressionList(id);
     }
+    public String getUserNameByImpressionId(int impressionId){
+        return impressionMapper.getUserNameByImpressionId(impressionId);
+    }
 }

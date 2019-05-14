@@ -7,4 +7,7 @@
     <select id="getImpressionList" resultType="Impression" parameterType="int">
         SELECT * FROM impression where id = #{0};
     </select>
+    <select id="getUserNameByImpressionId" resultType="String">
+        SELECT name FROM user where id = (SELECT userId from impression where id = #{0});
+    </select>
 </mapper>

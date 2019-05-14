@@ -63,4 +63,15 @@ public class ImpressionController {
         return map;
     }
 
+    @ApiOperation("获取感想对应的用户名称")
+    @RequestMapping(value = "getUserNameByImpressionId", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
+    public Map getUserNameByImpressionId(@RequestParam("impressionId") int id){
+        Map map = new HashMap();
+        String userName = impressionService.getUserNameByImpressionId(id);
+        map.put("status", 1);
+        map.put("userName", userName);
+        return map;
+    }
+
 }
