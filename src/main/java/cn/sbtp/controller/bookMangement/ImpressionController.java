@@ -94,6 +94,7 @@ public class ImpressionController {
         List<Impression> recentImpressionList = impressionService.getRecentImpressionList(id);
         map.put("status", 1);
         map.put("recentImpressionList", recentImpressionList);
+        map.put("firstImpressionId", recentImpressionList.get(0).getId());
         return map;
     }
 
