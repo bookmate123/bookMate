@@ -34,4 +34,7 @@ public class BookService {
     public String getBookNameByImpressionId(int impressionId){
         return bookMapper.getBookNameByImpressionId(impressionId);
     }
+    public List<Book> getBookListByCategory(String category){
+        return bookMapper.getBookListByCategory(category);
+    }
 }

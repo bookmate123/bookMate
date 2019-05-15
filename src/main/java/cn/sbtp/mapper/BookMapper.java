@@ -24,4 +24,6 @@ public interface BookMapper {
     List<Book> getFollowedBookList(int followingId);
     //获取感想对应的书籍名称
     String getBookNameByImpressionId(int impressionId);
+    //依据图书类别获取对应的图书列表
+    List<Book> getBookListByCategory(String category);
 }

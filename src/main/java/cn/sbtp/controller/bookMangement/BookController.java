@@ -4,6 +4,7 @@ import cn.sbtp.model.Book;
 import cn.sbtp.service.bookService.BookService;
 import com.wordnik.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -131,5 +132,15 @@ public class BookController {
         System.out.println("hello");
     }
 
+    @ApiOperation("依据类别获取对应类别的图书")
+    @RequestMapping(value = "getBookListByCategory", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
+    public Map getBookListByCategory(@RequestParam("Category") String category){
+        Map map = new HashMap();
+        List<Book> bookList = bookService.getBookListByCategory(category);
+        map.put("status", 1);
+        map.put("bookList", bookList);
+        return map;
+    }
 
 }

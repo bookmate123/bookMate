@@ -22,4 +22,7 @@
     <select id="getBookNameByImpressionId" resultType="String">
         SELECT bookName from book where id = (SELECT bookId FROM impression where id = #{0});
     </select>
+    <select id="getBookListByCategory" resultType="Book">
+        SELECT * FROM book WHERE category = #{0};
+    </select>
 </mapper>
