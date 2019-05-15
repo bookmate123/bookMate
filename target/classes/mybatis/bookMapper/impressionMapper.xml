@@ -13,4 +13,7 @@
     <select id="getImpressionById" resultType="Impression">
         SELECT * from impression where id = #{0};
     </select>
+    <select id="getRecentImpressionList" resultType="Impression" parameterType="int">
+        SELECT * FROM impression where bookId = #{0} ORDER BY releaseTime DESC limit 0,3;
+    </select>
 </mapper>

@@ -8,7 +8,7 @@ public class User {
     private String name;
     private String sex;
     private Date birthDate;
-    private Integer phoneNum;
+    private String phoneNum;
     private String password;
     private Date registerTime;
     private String QQ;
@@ -36,14 +36,6 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public Integer getPhoneNum() {
-        return phoneNum;
-    }
-
-    public void setPhoneNum(Integer phoneNum) {
-        this.phoneNum = phoneNum;
     }
 
     public Date getRegisterTime() {
@@ -84,5 +76,13 @@ public class User {
 
     public void setIconName(String iconName) {
         this.iconName = iconName;
+    }
+
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
     }
 }

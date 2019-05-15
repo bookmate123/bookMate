@@ -41,6 +41,7 @@ public class BookController {
         }
         map.put("status", 1);
         map.put("resultBookList", resultBookList);
+        map.put("followedBookNum", followedBookList.size());
         return map;
     }
 

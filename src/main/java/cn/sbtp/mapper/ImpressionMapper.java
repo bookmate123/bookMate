@@ -16,4 +16,6 @@ public interface ImpressionMapper {
     String getUserNameByImpressionId(int impressionId);
     //依据感想id获取对应感想
     Impression getImpressionById(int impressionId);
+    //获取最近的三个感想
+    List<Impression> getRecentImpressionList(int bookId);
  }

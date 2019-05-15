@@ -1,5 +1,6 @@
 package cn.sbtp.controller.userManagement;
 
+import cn.sbtp.model.Book;
 import cn.sbtp.model.User;
 import cn.sbtp.service.UserService;
 import com.wordnik.swagger.annotations.ApiOperation;
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -78,6 +80,17 @@ public class UserController {
                               @RequestParam("phoneNum") String phoneNum,
                               @RequestParam("QQ") String QQ){
         Map map = new HashMap();
+        return map;
+    }
+
+    @ApiOperation("获取某本书发布者列表")
+    @SuppressWarnings("unchecked")
+    @RequestMapping(value = "getSubmitUserList", method = RequestMethod.POST)
+    public Map getSubmitUserList(@RequestParam("bookId") int id){
+        Map map = new HashMap();
+        List<User> submitUserList = userService.getSubmitUserList(id);
+        map.put("status", 1);
+        map.put("submitUserList", submitUserList);
         return map;
     }
 }

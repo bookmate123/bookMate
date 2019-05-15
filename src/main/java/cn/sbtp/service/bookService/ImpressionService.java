@@ -2,6 +2,7 @@ package cn.sbtp.service.bookService;
 
 import cn.sbtp.mapper.ImpressionMapper;
 import cn.sbtp.model.Impression;
+import org.omg.CORBA.IMP_LIMIT;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,5 +25,8 @@ public class ImpressionService {
     }
     public Impression getImpressionById(int impressionId){
         return impressionMapper.getImpressionById(impressionId);
+    }
+    public List<Impression> getRecentImpressionList(int bookId){
+        return impressionMapper.getRecentImpressionList(bookId);
     }
 }

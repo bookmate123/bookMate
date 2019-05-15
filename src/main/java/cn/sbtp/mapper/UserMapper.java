@@ -19,4 +19,6 @@ public interface UserMapper {
     User getUserInfo(int id);
     //插入用户的头像名称
     void insertIconName(int id, String iconName);
+    //获取某本书的发布者列表
+    List<User> getSubmitUserList(int bookId);
 }

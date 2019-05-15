@@ -86,4 +86,15 @@ public class ImpressionController {
         return map;
     }
 
+    @ApiOperation("获取某书最近的最多三条感想")
+    @RequestMapping(value = "getRecentImpressionList", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
+    public Map getRecentImpressionList(@RequestParam("bookId") int id){
+        Map map = new HashMap();
+        List<Impression> recentImpressionList = impressionService.getRecentImpressionList(id);
+        map.put("status", 1);
+        map.put("recentImpressionList", recentImpressionList);
+        return map;
+    }
+
 }

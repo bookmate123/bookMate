@@ -23,4 +23,7 @@ public class UserService {
     public User getUserInfo(int id){
         return userMapper.getUserInfo(id);
     }
+    public List<User> getSubmitUserList(int bookId){
+        return userMapper.getSubmitUserList(bookId);
+    }
 }

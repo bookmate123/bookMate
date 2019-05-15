@@ -8,7 +8,7 @@ import java.util.List;
 public interface ReviewMapper {
 
     //获取评论列表
-    List<Review> getReviewListByBookId();
+    List<Review> getReviewListByImpressionId(int impressionId);
     //获取该用户的所有评论
     List<Review> getReviewListByUserId();
 }
