@@ -14,4 +14,6 @@ public interface ImpressionMapper {
     List<Impression> getImpressionList(int id);
     //获取发表感想的用户姓名
     String getUserNameByImpressionId(int impressionId);
+    //依据感想id获取对应感想
+    Impression getImpressionById(int impressionId);
  }

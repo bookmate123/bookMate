@@ -22,4 +22,7 @@ public class ImpressionService {
     public String getUserNameByImpressionId(int impressionId){
         return impressionMapper.getUserNameByImpressionId(impressionId);
     }
+    public Impression getImpressionById(int impressionId){
+        return impressionMapper.getImpressionById(impressionId);
+    }
 }

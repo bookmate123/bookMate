@@ -7,6 +7,7 @@ public class Book {
     private String author;
     private String description;
     private String category;
+    private String imageName;
 
 
     public int getId() {
@@ -49,4 +50,11 @@ public class Book {
         this.category = category;
     }
 
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
 }

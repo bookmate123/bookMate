@@ -6,6 +6,7 @@ import cn.sbtp.service.bookService.ImpressionService;
 import com.wordnik.swagger.annotations.ApiOperation;
 import org.omg.CORBA.MARSHAL;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -71,6 +72,17 @@ public class ImpressionController {
         String userName = impressionService.getUserNameByImpressionId(id);
         map.put("status", 1);
         map.put("userName", userName);
+        return map;
+    }
+
+    @ApiOperation("依据感想id获取对应感想")
+    @RequestMapping(value = "getImpressionById", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
+    public Map getImpressionById(@RequestParam("impressionId") int id){
+        Map map = new HashMap();
+        Impression impression = impressionService.getImpressionById(id);
+        map.put("status", 1);
+        map.put("impression", impression);
         return map;
     }
 
