@@ -144,4 +144,21 @@ public class BookController {
         return map;
     }
 
+    @ApiOperation("依据书名搜索图书")
+    @RequestMapping(value = "getBookListByBookName", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
+    public Map getBookListByBookName(@RequestParam("bookName") String bookName){
+        Map map = new HashMap();
+        List<Book> bookList = bookService.getBookList();
+        List<Book> resultBookList = new ArrayList<>();
+        for(Book book:bookList){
+            if(book.getBookName().contains(bookName)){
+                resultBookList.add(book);
+            }
+        }
+        map.put("status", 1);
+        map.put("resultBookList", resultBookList);
+        return map;
+    }
+
 }

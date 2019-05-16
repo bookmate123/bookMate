@@ -12,4 +12,7 @@ public interface TransMapper {
     public List<SubmitBookRecord> getSubmitBookRecordList();
     //依据bookId获取用户列表
     List<User> getUserListByBookId(int bookId);
+    //根据bookId获取已发布书籍列表
+    List<SubmitBookRecord> getSubmitBookRecordByBookId(int bookId);
+
 }

@@ -61,5 +61,17 @@ public class SubmitController {
         map.put("userList", userList);
         return map;
     }
+
+    @ApiOperation("依据bookId查询发布它的发布信息")
+    @RequestMapping(value = "getSubmitBookRecordByBookId", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
+    public Map getSubmitBookRecordByBookId(@RequestParam("bookId") int id){
+        Map map = new HashMap();
+        List<SubmitBookRecord> submitBookRecordList = transService.getSubmitBookRecordByBookId(id);
+        map.put("status", 1);
+        map.put("submitBookRecordList", submitBookRecordList);
+        return map;
+    }
+
 }
 

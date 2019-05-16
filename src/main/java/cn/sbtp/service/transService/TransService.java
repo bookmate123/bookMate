@@ -20,4 +20,8 @@ public class TransService {
     public List<User> getUserListByBookId(int bookId){
         return transMapper.getUserListByBookId(bookId);
     }
+    public List<SubmitBookRecord> getSubmitBookRecordByBookId(int bookId) {
+        return transMapper.getSubmitBookRecordByBookId(bookId);
+    }
+
 }
