@@ -13,6 +13,7 @@ public class SubmitBookInfo {
     private String author;
     private String description;
     private String category;
+    private String imageName;
 
     public void set(SubmitBookRecord record, Book book){
         id = record.getId();
@@ -25,6 +26,7 @@ public class SubmitBookInfo {
         author = book.getAuthor();
         description = book.getDescription();
         category = book.getCategory();
+        imageName = book.getImageName();
     }
 
     public int getId() {
@@ -105,5 +107,13 @@ public class SubmitBookInfo {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
     }
 }

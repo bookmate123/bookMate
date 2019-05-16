@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -32,6 +33,7 @@ public class SubmitController {
     @SuppressWarnings("unchecked")
     public Map getSubmitBookList(){
         Map map = new HashMap();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         List<SubmitBookRecord> submitBookRecordList = transService.getSubmitBookRecordList();
         List<SubmitBookInfo> submitBookInfoList = new ArrayList<>();
         for(SubmitBookRecord submitBookRecord:submitBookRecordList){
@@ -39,8 +41,13 @@ public class SubmitController {
             submitBookInfo.set(submitBookRecord, bookService.getBookInfoById(submitBookRecord.getBookId()));
             submitBookInfoList.add(submitBookInfo);
         }
+        List<String> dateList = new ArrayList<>(submitBookInfoList.size());
+        for(SubmitBookInfo submitBookInfo:submitBookInfoList){
+            dateList.add(sdf.format(submitBookInfo.getSubmitTime()));
+        }
         map.put("status", 1);
         map.put("submitBookInfoList", submitBookInfoList);
+        map.put("dateList", dateList);
         return map;
     }
 
