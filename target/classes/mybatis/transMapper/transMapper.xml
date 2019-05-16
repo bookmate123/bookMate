@@ -4,4 +4,7 @@
     <select id="getSubmitBookRecordList" resultType="SubmitBookRecord">
         SELECT * from submitbookrecord;
     </select>
+    <select id="getUserListByBookId" resultType="User" parameterType="int">
+        select * from user where id in (select userId from submitbookrecord where bookId = #{0});
+    </select>
 </mapper>

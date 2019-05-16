@@ -3,12 +3,14 @@ package cn.sbtp.controller.TransManagement;
 import cn.sbtp.model.Book;
 import cn.sbtp.model.SubmitBookInfo;
 import cn.sbtp.model.SubmitBookRecord;
+import cn.sbtp.model.User;
 import cn.sbtp.service.bookService.BookService;
 import cn.sbtp.service.transService.TransService;
 import com.wordnik.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -39,6 +41,17 @@ public class SubmitController {
         }
         map.put("status", 1);
         map.put("submitBookInfoList", submitBookInfoList);
+        return map;
+    }
+
+    @ApiOperation("依据bookId查询发布它的用户列表")
+    @RequestMapping(value = "getUserListByBookId", method = RequestMethod.POST)
+    @SuppressWarnings("unchecked")
+    public Map getUserListByBookId(@RequestParam("bookId") int id){
+        Map map = new HashMap();
+        List<User> userList = transService.getUserListByBookId(id);
+        map.put("status", 1);
+        map.put("userList", userList);
         return map;
     }
 }
