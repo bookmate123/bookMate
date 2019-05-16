@@ -1,6 +1,7 @@
 package cn.sbtp.controller.bookMangement;
 
 import cn.sbtp.model.Impression;
+import cn.sbtp.model.User;
 import cn.sbtp.service.bookService.BookService;
 import cn.sbtp.service.bookService.ImpressionService;
 import com.wordnik.swagger.annotations.ApiOperation;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,9 +49,16 @@ public class ImpressionController {
     @SuppressWarnings("unchecked")
     public Map getImpressionList(@RequestParam("bookId") int id){
         Map map = new HashMap();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         List<Impression> impressionList = impressionService.getImpressionList(id);
+        //感想的发布日期的字符串集合
+        List<String> dateList = new ArrayList<>(impressionList.size());
+        for(Impression impression:impressionList){
+            dateList.add(sdf.format(impression.getReleaseTime()));
+        }
         map.put("status", 1);
         map.put("impressionList", impressionList);
+        map.put("dateList", dateList);
         return map;
     }
 
@@ -92,9 +101,18 @@ public class ImpressionController {
     public Map getRecentImpressionList(@RequestParam("bookId") int id){
         Map map = new HashMap();
         List<Impression> recentImpressionList = impressionService.getRecentImpressionList(id);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        List<String> dateList = new ArrayList<>(recentImpressionList.size());
+        List<String> userNameList = new ArrayList<>(recentImpressionList.size());
         map.put("status", 1);
         map.put("recentImpressionList", recentImpressionList);
+        for (Impression impression:recentImpressionList){
+            dateList.add(sdf.format(impression.getReleaseTime()));
+            userNameList.add(impressionService.getUserNameByImpressionId(impression.getId()));
+        }
         map.put("firstImpressionId", recentImpressionList.get(0).getId());
+        map.put("dateList", dateList);
+        map.put("userNameList", userNameList);
         return map;
     }
 
